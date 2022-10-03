@@ -1,0 +1,9 @@
+<weather>
+    <title>Cloudy</title>
+    <temperature>16</temperature>
+    <mightRain>true</mightRain>
+    <nearbyCities>
+        <city>Copenhagen</city>
+        <city>Malmo</city>
+    </nearbyCities>
+</weather>
