@@ -4,11 +4,11 @@ import Papa from 'papaparse';
 import yaml from 'js-yaml';
 import { XMLParser } from 'fast-xml-parser';
 
-const textPath = path.join('../weather');
-const jsonPath = path.join('../weather.json');
-const xmlPath = path.join('../weather.xml');
-const csvPath = path.join('../weather.csv');
-const yamlPath = path.join('../weather.yaml');
+const textPath = path.join('../../0._Files/weather');
+const jsonPath = path.join('../../0._Files/weather.json');
+const xmlPath = path.join('../../0._Files/weather.xml');
+const csvPath = path.join('../../0._Files/weather.csv');
+const yamlPath = path.join('../../0._Files/weather.yaml');
 
 export const parseTEXT = (filePath) => {
     const data = fs.readFileSync(filePath, 'utf8');

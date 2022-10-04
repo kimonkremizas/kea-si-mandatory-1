@@ -1,10 +1,10 @@
 import json, yaml, csv, xmltodict
 
-textPath = '../weather'
-jsonPath = '../weather.json'
-xmlPath = '../weather.xml'
-csvPath = '../weather.csv'
-yamlPath = '../weather.yaml'
+textPath = '../../0._Files/weather'
+jsonPath = '../../0._Files/weather.json'
+xmlPath = '../../0._Files/weather.xml'
+csvPath = '../../0._Files/weather.csv'
+yamlPath = '../../0._Files/weather.yaml'
 
 def parse_text(file_path):
     with open(file_path) as text_file:

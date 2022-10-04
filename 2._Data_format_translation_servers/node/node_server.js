@@ -1,11 +1,9 @@
-import fs from 'fs';
-import path from 'path';
-import xml2js from 'xml2js';
 import express from "express";
 import cors from "cors";
 import swaggerJsDoc from "swagger-jsdoc";
 import swaggerUI from "swagger-ui-express";
-import weatherRouter from "./routers/xml.js";
+import weatherXmlRouter from "./routers/yaml.js";
+import weatherYamlRouter from "./routers/yaml.js";
 
 const app = express();
 app.use(cors());
@@ -25,7 +23,8 @@ const openapiSpecification = swaggerJsDoc(options);
 
 app.use('/docs', swaggerUI.serve, swaggerUI.setup(openapiSpecification));
 
-app.use(weatherRouter);
+app.use(weatherXmlRouter);
+app.use(weatherYamlRouter);
 
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {

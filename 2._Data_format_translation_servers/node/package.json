@@ -2,10 +2,14 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.18.1",
+    "json-to-xml": "^1.0.4",
     "nodemon": "^2.0.20",
     "swagger-jsdoc": "^6.2.5",
     "swagger-ui-express": "^4.5.0",
-    "xml2js": "^0.4.23"
+    "xml-js": "^1.6.11",
+    "xml-to-json": "^0.1.1",
+    "xml2js": "^0.4.23",
+    "yaml": "^2.1.2"
   },
   "type": "module"
 }
